@@ -1,0 +1,340 @@
+#! /usr/bin/python
+# -*- coding: utf-8 -*-
+
+import random
+# execute connection string contianing db/username/password in string 'con'
+execfile('connect.py')
+print """
+<!DOCTYPE html>
+<!--
+ * Copyright 2014 
+ * Licensed under the Apache License v2.0
+ * Redesigned, Developed, and Maintained by: Samuel Jackson Rains
+ * Original design by Carlos Alvarezand http://www.basicoh.com.
+--> 
+<html lang="en">
+    <head>
+        <title>Samuel J. Rains</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="software portfolio, portfolio, jack rains, web development, web design, php, objective-c, app, samuel rains, atlanta, georgia" />
+        <meta name="description" content="Samuel J. Rains is a software developer from Atlanta, Georgia.   The site contains information regarding various software projects and bodies of work." />
+        <meta name="author" content="Samuel J. Rains">
+
+        <!-- CSS files-->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/component.css" rel="stylesheet">
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="css/alertify.core.css" rel="stylesheet">
+   
+   		<!-- mondernizr js file -->
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+        <!--[if IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        <!-- favicon and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57-precomposed.png">
+        <link rel="icon" href="images/favicon.png">         
+        <script type="text/javascript" >
+            (function(i,s,o,g,r,a,m)
+                {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })
+                (window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-47836191-1', 'samueljrains.com');
+                ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="bl-main" class="bl-main">
+            <!--=========== ABOUT SECTION ===========-->
+                <section>
+                    <div class="bl-box">
+                        <h2 >About</h2> <!-- class="bl-icon bl-icon-about" -->
+                    </div><!-- /bl-box -->
+                    <div class="bl-content">
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <h2>Hi there!</h2>
+                                <p>I'm a software developer out of Atlanta, Georgia.  I've been working in the field full-time since 2008 and part-time since 2006.  I mainly use open-source technologies but have worked in proprietary stacks as well.  Hope you enjoy my site.</p>
+                                <div class="row-fluid">
+                                    <div class="span8">
+                                        <h2>My Skills</h2>
+                                        <!-- Progress Bar --> 
+                                        <div class="progress">
+                                        <div class="bar" style="width: 75%;">PHP 75%</div>
+                                        </div>
+                                        <div class="progress">										
+                                        <div class="bar" style="width: 73%;">HTML/CSS 73%</div>								
+                                        </div>  
+                                        <div class="progress">										
+                                        <div class="bar" style="width: 65%;">MySQL 65%</div>		                                        
+                                        </div>
+                                        <div class="progress">
+                                        <div class="bar" style="width: 50%;">Python 50%</div>
+                                        </div>                                                                                 
+                                        <div class="progress">										
+                                        <div class="bar" style="width: 85%;">Web Accessibility 85%</div>
+                                        </div>  										
+                                        <div class="progress">
+                                        <div class="bar" style="width: 65%;">SaaS 65%</div>
+                                        </div>                                         
+                                        <!-- Progress Bar End --> 
+                                    </div><!-- /span6 -->
+                                    <div class="span4"></div>
+                                    <div class="span12">
+                                        <br>
+                                        <br>
+                                    </div>
+                                    <div class="span12">
+                                        <div class="row about-us">
+                                                <div class="span3">
+                                                <h3><i class="icon-user icon-white"></i> More About Me</h3>
+                                                Based out of Atlanta and a product of the University of Alabama, I'm an avid disc (and ball) golf player.  I also enjoy bicycling, technology, surf music, and attempting to stay in shape...the latter being easier said than done.  I've also been known to enjoy a craft beer or coffee around town.
+                                                </div>
+                                                <div class="span3">
+                                                <h3><i class="icon-heart icon-white"></i> What I Love</h3>
+                                                Collaborating with like-minded individuals to create the best possible solutions to any given issue is what drives me.  I love creating software and approaching tasks with an open and positive mind. Accessibility and equal access for all are passions of mine.
+                                                </div>
+                                                <div class="span3">
+                                                <h3><i class="icon-wrench icon-white"></i> Work</h3>
+                                                I'm working with the Georgia Institute of Technology to help bring accessible SaaS to individuals across the U.S.  In addition, I building my online presence and portfolio through various independent and collaborative projects.  I'm wanting to expand my front-end knowledge as well.
+                                                </div>   
+                                                <div class="span3">
+                                                <h3><i class="icon-bullhorn icon-white"></i> Get In Touch</h3>
+                                                Feel free to drop me a line at jack@samueljrains.com.  I'm always up for exchanging ideas or possible collaborations.  I don't bite!
+                                                </div>    
+                                        </div><!-- /row-about-us -->  
+                                    </div><!-- /span12 -->
+                                </div><!-- /row -->
+                            </div><!-- /span12 -->
+                        </div><!-- /row-fluid -->
+                    </div><!-- /bl-content --> 
+                    <span class="bl-icon bl-icon-close"></span>
+                </section>
+
+                <!--=========== PORTFOLIO SECTION ===========-->
+                <section id="bl-work-section">
+                    <div class="bl-box">
+                            <h2>Projects</h2> <!-- class="bl-icon bl-icon-works"-->
+                    </div>
+                    <div class="bl-content" >
+                        <h2>Recent Projects</h2>
+                        <p>Here are some of the recent projets I have been working full-time on.  They encompass my abilities not only in web development, but design as well.  This needs to extend a few more sentences, so I'm adding some placeholder text here.</p>
+                        <p>Put some more stuff here regarding projects you'd like to be involved with and other stuff (like using postgreSQL and Python scripting).  This also needs some more text, so here's another sentence for ya.</p>
+                        <p></p>
+                        <p></p>
+                        <div class="row-fluid">
+                            <div class="span4">
+                                <ul id="bl-work-items" style="list-style: none;">
+                                    <li data-panel="panel-1"><a href="#"><img src="images/project1.jpg" alt="browser add on example"/></a></li>
+                                </ul>
+                                <p>Browser Add-Ons</p>							
+                            </div><!-- /span4 -->
+                            <div class="span4">
+                                <ul id="bl-work-items">
+                                    <li data-panel="panel-2"><a href="#"><img src="images/projects/atn.png" alt="access text dashboard" /></a></li>
+                                </ul>
+                                <p>AccessText Network</p>							
+                            </div><!-- /span4 -->
+                            <div class="span4">
+                                <ul id="bl-work-items">
+                                    <li data-panel="panel-3"><a href="#"><img src="images/project3.jpg" alt="full-time development example" /></a></li>
+                                </ul>
+                                <p>Alternative Media Access Center</p>							
+                            </div><!-- /span4 -->
+                        </div><!-- /row-fluid -->
+                    </div><!-- /bl-content -->
+                    <span class="bl-icon bl-icon-close"></span>
+                </section>
+
+                    <!--=========== BLOG SECTION ===========-->
+                <section>
+                    <div class="bl-box">
+                        <h2>Articles</h2>
+                    </div>
+                    <div class="bl-content">
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <h2>Stuff</h2>
+                                <article>
+                                    <h3>
+                                    """
+with con:
+    cur = con.cursor()
+    cur.execute("SELECT id, title, article, date FROM articles ORDER BY id DESC LIMIT 1")
+    for i in range(cur.rowcount):
+        row = cur.fetchone()
+        print "%s" % (row[1])
+        print """
+                                    </h3>
+                                    <img src="images/water-pic2.jpg" style="width: 100%;" alt="blue waterfront with dock">
+                                    <p>
+"""
+
+        print "%s" % (row[3].strftime("%m.%d.%y"))
+        print "%s" % (row[2])
+        cur.close()                                   
+print """        
+                                    </p>
+                                </article>
+                                <hr>
+                                <h2>Other Entries</h2>
+<div class='panel-group' id='accordion'>                               
+
+"""
+with con:
+    old_articles = con.cursor()
+    old_articles.execute("SELECT id, title, article, date FROM articles ORDER BY date DESC LIMIT 10 OFFSET 1")
+for item in old_articles:
+		print "<article><div class='panel panel-default'><div class='panel-heading'><h3 class='panel-title'><a style='color: white;' data-toggle='collapse' data-parent='#accordion' href='#collapse%s'>%s %s</a></h3></div><div id='collapse%s' class='panel-collapse collapse'><div class='panel-body'>%s<hr></div></div></div></article>" % (item[0], item[1] , item[3].strftime("%m.%d.%y"), item[0], item[2])
+#		print "<article><div class='panel panel-default'><div class='panel-heading'><h3 class='panel-title'><a style='color: white;' data-toggle='collapse' data-parent='#accordion' href='#collapse%s'>%s</a></h3></div><div id='collapse%s' class='panel-collapse collapse'><div class='panel-body'>%s<br />%s<hr></div></div></div></article>" % (item[0], item[1] , item[0], item[3].strftime("%m.%d.%y"), item[2])		
+old_articles.close()
+con.close()		
+print """        
+</div>                                                                   
+                            </div><!-- /span12 -->
+                            
+                        </div><!-- /row-fluid -->
+                    </div><!-- /bl-content -->
+                    <span class="bl-icon bl-icon-close"></span>
+                </section>
+
+                <!--=========== CONTACT SECTION ===========-->
+                <section>
+                    <div class="bl-box">
+                        <h2 >Contact</h2>
+                    </div>
+                    <div class="bl-content">
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <h2>Get in touch</h2>
+                                <br>
+                                """
+number1 = random.randrange(1,10+1)
+number2 = random.randrange(1,10+1)
+answer_value = number1 + number2
+print """                                
+                                <script type="text/javascript">
+                                var number1 = Math.floor((Math.random() * 10) +1);
+                                var number2 = Math.floor((Math.random() * 10) + 1);
+                                var answer = number1 + number2;
+                                
+                                </script>
+                                <p>Fill out the form below, or you could drop me an email as well.</p>								
+                                <form id="myForm" method="post" title="Contact Info Request Form"  action="action.cgi">
+                                		<fieldset>
+                                    <input type="text"  title="field for entering your name" name="name" id="name" maxlength="50" placeholder="Name" />
+                                    <br />
+                                    <input type="text" title="field for entering your email address" name="email" id="email" maxlength="50" placeholder="Email" />
+                                    <br />
+                                    <textarea title="field for entering your message" name="message" id="message" rows="5" cols="4" maxlength="1000"placeholder="Message"></textarea>
+                                    <br />
+                                    """
+print "What is %d + %d?" % (number1, number2)
+print """
+												<br />
+                                    <input style="width: 70px;" type="text" title="field for entering the anti spam answer" placeholder="Answer" size="4" maxlength="2" id="answer_input" name="answer_input" />						                                    
+"""
+print "<input type='hidden' name='answer_value' id='answer_value' value='%d'/>" % (answer_value)
+print """
+                                    <br />
+                                    <br />
+                                    <input type="submit" class="submit" name="submit" value="send message" />
+                                    </fieldset>
+                                </form>							
+                                <p>jack@samueljrains.com | Atlanta, Georgia 30307</p>		
+                                <p>
+                                <style>
+
+                                </style>
+                                    <a href="http://www.twitter.com/jack__rains" class="social-network twitter" ><span>twitter</span></a>
+                                    <a href="http://www.github.com/samueljrains" class="social-network github" ><span>github</span></a>
+                                    <a href="http://www.reddit.com/user/alasjr" class="social-network reddit" ><span>reddit</span></a>
+                                    <a href="https://stackexchange.com/users/3475503/jack?tab=accounts" class="social-network openid"><span>stack exchange</span></a>								
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="bl-icon bl-icon-close"></span>
+                </section>                
+                    <!--=========== PROJECTS DESCRIPTIONS SECTION ===========-->
+                <div class="bl-panel-items" id="bl-panel-work-items">
+                    <div data-panel="panel-1">
+                        <div class="row-fluid">
+                            <div class="span8 offset2 tweak">
+                                <img src="images/project1.jpg" alt="project screenshot" />
+                                <br>
+                                <br>
+                                <h4>Broswer Plugins</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                <h4>Project Details</h4>
+                                <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div><!-- /span8 -->
+                        </div><!-- /row-fluid -->	
+                    </div><!-- /panel1 -->
+
+                    <div data-panel="panel-2">
+                        <div class="row-fluid">
+                            <div class="span8 offset2 tweak">
+                                <img src="images/projects/atn.png" alt="accesstext dashboard" />
+                                <br>
+                                <br>
+                                <h4>The AccessText Network</h4>
+                                <p>AccessText is a conduit between the publishing world and colleges and universities across the country, with a shared mission to ensure students with disabilities have equal access to their textbooks in an accessible format and in a timely manner.</p>
+                                <h4>Project Details</h4>                                
+                                 <p>Accomodating several textbook publisher's APIs, I developed a tracking and real-time delivery system with extensive user management to provide accessible textbooks and requests to end users.  This includes, download restrictions (14 days only), request data, geographical/IP information, etc. </p>
+                                <p>Using the CakePHP framework, I migrated off the existing (and outsourced) architecture of the network and developed an extensive backend for user management, file delivery, and asset tracking.  I also assisted in the front-end design and implementation of the forward facing website.</p>
+                                <p><a href="http://accesstext.org" title="accesstext homepage">AccessText Website</a></p>
+                                <p><a href="http://accesstext.org/howitworks.php" title="how access text works">How AccessText Works</a></p>                               
+                            </div><!-- /span8 -->
+                        </div><!-- /row-fluid -->	
+                    </div><!-- /panel2 -->
+
+                    <div data-panel="panel-3">
+                        <div class="row-fluid">
+                            <div class="span8 offset2 tweak">
+                                <img src="images/project3.jpg" alt="professional work screenshot"/>
+                                <br>
+                                <br>
+                                <h4>Professional Work</h4>
+                                <p>The Alternative Media Access Center is an organization based on removing the barriers in education for indivduials with disabilities</p>
+                                <h4>Project Details</h4>
+                                <p>The site is listed here.  <a href="http://www.amacusg.gatech.edu">AMAC Website</a></p>
+                            </div><!-- /span8 -->
+                        </div><!-- /row-fluid -->	
+                    </div><!-- /panel3 -->                  
+                    <nav>
+                        <span class="bl-next-work">&gt; Next Project</span>
+                        <span class="bl-icon bl-icon-close"></span>
+                    </nav>
+                </div><!-- /panel-items -->
+            </div><!-- /bl-main -->
+        </div> <!-- /container -->
+
+
+        <!-- Le javascript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/boxlayout.js"></script>
+        <!--JS files for contact form -->
+        <script type="text/javascript" src="js/contact.js"></script>   
+        <script type="text/javascript" src="js/jquery.form.js"></script> 
+        <script type="text/javascript" src="js/alertify.min.js"></script>
+        <script>
+        $(function() {
+            Boxlayout.init();
+        });
+        </script>
+    </body>
+</html>
+"""
