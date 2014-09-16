@@ -320,9 +320,7 @@ print """
         </div> <!-- /container -->
 
 
-        <!-- Le javascript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
+        <!-- javascript files-->
         <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/boxlayout.js"></script>
