@@ -1,3 +1,4 @@
 /logs/*
 /connect.py
 .gitconfig
+.htaccess
