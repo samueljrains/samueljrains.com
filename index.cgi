@@ -262,7 +262,7 @@ print """
                         </div>
                     </div>
                     <span class="bl-icon bl-icon-close"></span>
-                </section>                
+                </section>                 
                     <!--=========== PROJECTS DESCRIPTIONS SECTION ===========-->
                 <div class="bl-panel-items" id="bl-panel-work-items">
                     <div data-panel="panel-1">
