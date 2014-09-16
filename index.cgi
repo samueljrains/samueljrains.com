@@ -127,16 +127,14 @@ print """
                     </div>
                     <div class="bl-content" >
                         <h2>Recent Projects</h2>
-                        <p>Here are some of the recent projets I have been working full-time on.  They encompass my abilities not only in web development, but design as well.  This needs to extend a few more sentences, so I'm adding some placeholder text here.</p>
-                        <p>Put some more stuff here regarding projects you'd like to be involved with and other stuff (like using postgreSQL and Python scripting).  This also needs some more text, so here's another sentence for ya.</p>
-                        <p></p>
-                        <p></p>
+                        <p>Here are some of the recent projects I have been working on full-time.  They encompass my abilities, not only in web development and software, but design as well.  These web based applications are cross-compatible.  "Speaking to" each other despite different database architecture and languages.</p>
+                        <p>I've taken an interest in PostgreSQL and Python development of late.  iOS and Android (Java!) development are also on the horizon...within the year, I'm aiming to add to my portfolio with mobile apps.  In the meantime, here are some examples of my body of work.</p>
                         <div class="row-fluid">
                             <div class="span4">
                                 <ul id="bl-work-items" style="list-style: none;">
-                                    <li data-panel="panel-1"><a href="#"><img src="images/project1.jpg" alt="browser add on example"/></a></li>
+                                    <li data-panel="panel-1"><a href="#"><img src="images/projects/accessga.png" alt="access ga homepage"/></a></li>
                                 </ul>
-                                <p>Browser Add-Ons</p>							
+                                <p>AccessGA</p>							
                             </div><!-- /span4 -->
                             <div class="span4">
                                 <ul id="bl-work-items">
@@ -146,7 +144,7 @@ print """
                             </div><!-- /span4 -->
                             <div class="span4">
                                 <ul id="bl-work-items">
-                                    <li data-panel="panel-3"><a href="#"><img src="images/project3.jpg" alt="full-time development example" /></a></li>
+                                    <li data-panel="panel-3"><a href="#"><img src="images/projects/amac.png" alt="amac homepage" /></a></li>
                                 </ul>
                                 <p>Alternative Media Access Center</p>							
                             </div><!-- /span4 -->
@@ -255,9 +253,9 @@ print """
                                 <style>
 
                                 </style>
-                                    <a href="http://www.twitter.com/jack__rains" class="social-network twitter" ><span>twitter</span></a>
                                     <a href="http://www.github.com/samueljrains" class="social-network github" ><span>github</span></a>
                                     <a href="http://www.reddit.com/user/alasjr" class="social-network reddit" ><span>reddit</span></a>
+                                    <a href="http://www.twitter.com/jack__rains" class="social-network twitter" ><span>twitter</span></a>                                    
                                     <a href="https://stackexchange.com/users/3475503/jack?tab=accounts" class="social-network openid"><span>stack exchange</span></a>								
                                 </p>
                             </div>
@@ -270,10 +268,10 @@ print """
                     <div data-panel="panel-1">
                         <div class="row-fluid">
                             <div class="span8 offset2 tweak">
-                                <img src="images/project1.jpg" alt="project screenshot" />
+                                <img src="images/projects/accessga.png" alt="Access GA homepage" />
                                 <br>
                                 <br>
-                                <h4>Broswer Plugins</h4>
+                                <h4>AccessGA</h4>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                                 <h4>Project Details</h4>
                                 <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -301,7 +299,7 @@ print """
                     <div data-panel="panel-3">
                         <div class="row-fluid">
                             <div class="span8 offset2 tweak">
-                                <img src="images/project3.jpg" alt="professional work screenshot"/>
+                                <img src="images/projects/amac.png" alt="professional work screenshot"/>
                                 <br>
                                 <br>
                                 <h4>Professional Work</h4>
@@ -318,7 +316,6 @@ print """
                 </div><!-- /panel-items -->
             </div><!-- /bl-main -->
         </div> <!-- /container -->
-
 
         <!-- javascript files-->
         <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
