@@ -280,7 +280,7 @@ print """
                             </div><!-- /span8 -->
                         </div><!-- /row-fluid -->	
                     </div><!-- /panel1 -->
-
+ 
                     <div data-panel="panel-2">
                         <div class="row-fluid">
                             <div class="span8 offset2 tweak">
