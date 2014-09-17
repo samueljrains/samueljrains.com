@@ -134,3 +134,28 @@ git status
 git add .
 git commit -m ".htaccess file update and error.html"
 git push
+ls
+git status
+git add .
+git commit -m "remove unnecessary CSS"
+git push
+git status
+git add .
+git commit -m ".gitignore update"
+git push
+git status
+git add .gitignore 
+git commit -m ".gitignore update"
+git push
+git status
+rm .viminfo
+git add .
+git status
+git commit -m ".gitignore update"
+git push
+git status
+git push
+git pull
+git push
+git status
+exit

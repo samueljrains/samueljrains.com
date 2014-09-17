@@ -272,9 +272,10 @@ print """
                                 <br>
                                 <br>
                                 <h4>AccessGA</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                <p>AccessGa is a joint project form the Georgia Department of Education and others.</p>
                                 <h4>Project Details</h4>
-                                <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <p>Created the support logging system, integrated into existing asset and employee databases.  Streamlined entire process.</p>
+										  <p><a href="http://accessit.gatech.edu/" title="access GA homepage" target="_blank" >AccessGA Website</a></p>
                             </div><!-- /span8 -->
                         </div><!-- /row-fluid -->	
                     </div><!-- /panel1 -->
@@ -288,10 +289,9 @@ print """
                                 <h4>The AccessText Network</h4>
                                 <p>AccessText is a conduit between the publishing world and colleges and universities across the country, with a shared mission to ensure students with disabilities have equal access to their textbooks in an accessible format and in a timely manner.</p>
                                 <h4>Project Details</h4>                                
-                                 <p>Accomodating several textbook publisher's APIs, I developed a tracking and real-time delivery system with extensive user management to provide accessible textbooks and requests to end users.  This includes, download restrictions (14 days only), request data, geographical/IP information, etc. </p>
+                                <p>Accomodating several textbook publisher's APIs, I developed a tracking and real-time delivery system with extensive user management to provide accessible textbooks and requests to end users.  This includes, download restrictions (14 days only), request data, geographical/IP information, etc. </p>
                                 <p>Using the CakePHP framework, I migrated off the existing (and outsourced) architecture of the network and developed an extensive backend for user management, file delivery, and asset tracking.  I also assisted in the front-end design and implementation of the forward facing website.</p>
-                                <p><a href="http://accesstext.org" title="accesstext homepage">AccessText Website</a></p>
-                                <p><a href="http://accesstext.org/howitworks.php" title="how access text works">How AccessText Works</a></p>                               
+                                <p><a href="http://accesstext.org" title="accesstext homepage" target="_blank" >AccessText Website</a></p>
                             </div><!-- /span8 -->
                         </div><!-- /row-fluid -->	
                     </div><!-- /panel2 -->
@@ -302,10 +302,11 @@ print """
                                 <img src="images/projects/amac.png" alt="professional work screenshot"/>
                                 <br>
                                 <br>
-                                <h4>Professional Work</h4>
+                                <h4>Alternative Media Access Center</h4>
                                 <p>The Alternative Media Access Center is an organization based on removing the barriers in education for indivduials with disabilities</p>
                                 <h4>Project Details</h4>
-                                <p>The site is listed here.  <a href="http://www.amacusg.gatech.edu">AMAC Website</a></p>
+                                <p>As one of only three developers, I have rewritten the realtime delivery of accessible media and facilitated the store of over 15,000 accessible medias and hundres of thousands of mission critical data.</p>
+                                <p><a href="http://www.amacusg.gatech.edu" target="_blank" >AMAC Website</a></p>
                             </div><!-- /span8 -->
                         </div><!-- /row-fluid -->	
                     </div><!-- /panel3 -->                  
