@@ -72,7 +72,7 @@ print """
                                         <div class="bar" style="width: 75%;">PHP 75%</div>
                                         </div>
                                         <div class="progress">										
-                                        <div class="bar" style="width: 73%;">HTML/CSS 73%</div>								
+                                        <div class="bar" style="width: 80%;">HTML/CSS 80%</div>								
                                         </div>  
                                         <div class="progress">										
                                         <div class="bar" style="width: 65%;">MySQL 65%</div>		                                        
