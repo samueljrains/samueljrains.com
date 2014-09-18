@@ -149,7 +149,7 @@ print """
                                 <p>Student Download & Resource Center</p>							
                             </div><!-- /span4 -->                            
                         </div><!-- /row-fluid -->
-<!--AccessGA, App(s), Invertr stuff when completed                        
+<!--AccessGA, App(s), Invertr stuff when completed.   Hurry it up will ya'?!                        
 								<div class="row-fluid">
                             <div class="span4">
                                 <ul id="bl-work-items" style="list-style: none;">
