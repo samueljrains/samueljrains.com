@@ -7,6 +7,10 @@ SENDMAIL = "/usr/sbin/sendmail" # sendmail location
 
 form = cgi.FieldStorage() 
 
+#check for anti-spam values
+# redirect AJAX response message back to alertify that anti-spam does not match
+# not good enough to do it only via client side JS (in case they turn it off).
+
 if form.getvalue('email') is not None:
 	FROM = form.getvalue('email')
 else:
