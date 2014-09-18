@@ -187,6 +187,7 @@ print """
                                 <article>
                                     <h3>
                                     """
+#uses 'connect' script and creates a cursor to pull latest article from 'articles' DB table.  outputs previous ones below it as well.
 with con:
     cur = con.cursor()
     cur.execute("SELECT id, title, article, date FROM articles ORDER BY id DESC LIMIT 1")
@@ -238,6 +239,7 @@ print """
                                 <h2>Get in touch</h2>
                                 <br>
                                 """
+#used for generating two random numbers (1-10) and ask user to add together to try and trick any spam bots
 number1 = random.randrange(1,10+1)
 number2 = random.randrange(1,10+1)
 answer_value = number1 + number2
