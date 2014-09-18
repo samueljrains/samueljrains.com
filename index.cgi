@@ -132,23 +132,45 @@ print """
                         <div class="row-fluid">
                             <div class="span4">
                                 <ul id="bl-work-items" style="list-style: none;">
-                                    <li data-panel="panel-1"><a href="#"><img src="images/projects/accessga.png" alt="access ga homepage"/></a></li>
-                                </ul>
-                                <p>AccessGA</p>							
-                            </div><!-- /span4 -->
-                            <div class="span4">
-                                <ul id="bl-work-items">
-                                    <li data-panel="panel-2"><a href="#"><img src="images/projects/atn.png" alt="access text dashboard" /></a></li>
+                                    <li data-panel="panel-1"><a href="#"><img src="images/projects/atn.png" alt="access text dashboard" /></a></li>
                                 </ul>
                                 <p>AccessText Network</p>							
                             </div><!-- /span4 -->
                             <div class="span4">
                                 <ul id="bl-work-items">
-                                    <li data-panel="panel-3"><a href="#"><img src="images/projects/amac.png" alt="amac homepage" /></a></li>
+                                    <li data-panel="panel-2"><a href="#"><img src="images/projects/amac.png" alt="amac homepage" /></a></li>
                                 </ul>
                                 <p>Alternative Media Access Center</p>							
                             </div><!-- /span4 -->
+                            <div class="span4">
+                                <ul id="bl-work-items">
+                                    <li data-panel="panel-3"><a href="#"><img src="images/projects/student_center.png" alt="student download center portal page"/></a></li>
+                                </ul>
+                                <p>Student Download & Resource Center</p>							
+                            </div><!-- /span4 -->                            
                         </div><!-- /row-fluid -->
+<!--AccessGA, App(s), Invertr stuff when completed                        
+								<div class="row-fluid">
+                            <div class="span4">
+                                <ul id="bl-work-items" style="list-style: none;">
+                                    <li data-panel="panel-1"><a href="#"><img src="images/projects/atn.png" alt="accessga homepage" /></a></li>
+                                </ul>
+                                <p>AccessGA</p>							
+                            </div> 
+                            <div class="span4">
+                                <ul id="bl-work-items" style="list-style: none;">
+                                    <li data-panel="panel-1"><a href="#"><img src="images/projects/atn.png" alt="accessga homepage" /></a></li>
+                                </ul>
+                                <p>AccessGA</p>							
+                            </div>   
+                            <div class="span4">
+                                <ul id="bl-work-items" style="list-style: none;">
+                                    <li data-panel="panel-1"><a href="#"><img src="images/projects/atn.png" alt="accessga homepage" /></a></li>
+                                </ul>
+                                <p>AccessGA</p>							
+                            </div>                                                                              
+                     	</div>
+-->
                     </div><!-- /bl-content -->
                     <span class="bl-icon bl-icon-close"></span>
                 </section>
@@ -263,24 +285,9 @@ print """
                     </div>
                     <span class="bl-icon bl-icon-close"></span>
                 </section>                 
-                    <!--=========== PROJECTS DESCRIPTIONS SECTION ===========-->
+                    <!--=========== PROJECTS DESCRIPTIONS SECTION ===========--> 
                 <div class="bl-panel-items" id="bl-panel-work-items">
                     <div data-panel="panel-1">
-                        <div class="row-fluid">
-                            <div class="span8 offset2 tweak">
-                                <img src="images/projects/accessga.png" alt="Access GA homepage" />
-                                <br>
-                                <br>
-                                <h4>AccessGA</h4>
-                                <p>AccessGa is a joint project form the Georgia Department of Education and others.</p>
-                                <h4>Project Details</h4>
-                                <p>Created the support logging system, integrated into existing asset and employee databases.  Streamlined entire process.</p>
-										  <p><a href="http://accessit.gatech.edu/" title="access GA homepage" target="_blank" >AccessGA Website</a></p>
-                            </div><!-- /span8 -->
-                        </div><!-- /row-fluid -->	
-                    </div><!-- /panel1 -->
- 
-                    <div data-panel="panel-2">
                         <div class="row-fluid">
                             <div class="span8 offset2 tweak">
                                 <img src="images/projects/atn.png" alt="accesstext dashboard" />
@@ -289,29 +296,40 @@ print """
                                 <h4>The AccessText Network</h4>
                                 <p>AccessText is a conduit between the publishing world and colleges and universities across the country, with a shared mission to ensure students with disabilities have equal access to their textbooks in an accessible format and in a timely manner.</p>
                                 <h4>Project Details</h4>                                
-                                <p>Accomodating several textbook publisher's APIs, I developed a tracking and real-time delivery system with extensive user management to provide accessible textbooks and requests to end users.  This includes, download restrictions (14 days only), request data, geographical/IP information, etc. </p>
+                                <p>Accommodating several textbook publisher's APIs, I developed a tracking and real-time delivery system with extensive user management to provide accessible textbooks and requests to end users.  This includes, download restrictions (14 days only), request data, geographical/IP information, etc. </p>
                                 <p>Using the CakePHP framework, I migrated off the existing (and outsourced) architecture of the network and developed an extensive backend for user management, file delivery, and asset tracking.  I also assisted in the front-end design and implementation of the forward facing website.</p>
                                 <p><a href="http://accesstext.org" title="accesstext homepage" target="_blank" >AccessText Website</a></p>
                             </div><!-- /span8 -->
                         </div><!-- /row-fluid -->	
-                    </div><!-- /panel2 -->
-
-                    <div data-panel="panel-3">
+                    </div><!-- /panel1 -->
+                    <div data-panel="panel-2">
                         <div class="row-fluid">
                             <div class="span8 offset2 tweak">
                                 <img src="images/projects/amac.png" alt="professional work screenshot"/>
                                 <br>
                                 <br>
                                 <h4>Alternative Media Access Center</h4>
-                                <p>The Alternative Media Access Center is an organization based on removing the barriers in education for indivduials with disabilities</p>
+                                <p>The Alternative Media Access Center is an organization based on removing the barriers in education for indivduials with disabilities.</p>
                                 <h4>Project Details</h4>
-                                <p>As one of only three developers, I have rewritten the realtime delivery of accessible media and facilitated the store of over 15,000 accessible medias and hundres of thousands of mission critical data.</p>
-                                <h4>Further Details</h4>
-                                <p><img src="images/projects/student_center.png" alt="screenshot of student center dashboard">The Student Download center is a portal for students that was designed and developed to integrate the existing ordering systems directly with students.  The process streamlines ordering and conveniently places all information directly in the hands of the students.  Also, the portal allows students to request orders, software, as well as download their media.</p>
+                                <p>As one of only three developers, I have rewritten the realtime delivery of accessible media and facilitated the storage and access of over 15,000 accessible media files and hundres of thousands of mission critical data files.  Primarily with the use of a LAMP stack (with Ruby scripts for backup) and agile development practices, I have helped create a single system for internal assets, employee information, sensitive student data, ticketing and support logging, in addition to accessible textbooks and media.  The AMAC project encompasses hundreds of membership organizations across the United States and is growing rapidly.  With the growth, scalability of the database architecture and systems has become paramount to my position and continues to do so everyday.</p>
                                 <p><a href="http://www.amacusg.gatech.edu" target="_blank" >AMAC Website</a></p>
                             </div><!-- /span8 -->
                         </div><!-- /row-fluid -->	
-                    </div><!-- /panel3 -->                  
+                    </div><!-- /panel2 -->           
+                    <div data-panel="panel-3">
+                        <div class="row-fluid">
+                            <div class="span8 offset2 tweak">
+                                <img src="images/projects/student_center.png" alt="screenshot of student center dashboard">
+                                <br>
+                                <br>
+                                <h4>Student Download & Resource Center</h4>
+                                <p>The Student Download & Resource Center is a web application that was designed and developed to integrate the existing ordering systems directly with students.  The process streamlines ordering and conveniently places all information directly in the hands of the students.  Also, the portal allows students to request orders, software, as well as download their media.</p>
+                                <h4>Project Details</h4>
+                                <p>The Student Download & Resource Center is a "ground up" PHP project using MySQL as the database.  The front end uses jQuery and JavaScript functions to create a seamless product that is both easy-to-use and highly functional as well.</p>
+                                <p><a href="http://www.amacusg.gatech.edu" target="_blank" >AMAC Website</a></p>                                                           
+                            </div><!-- /span8 -->
+                        </div><!-- /row-fluid -->	
+                    </div><!-- /panel3 -->                                           
                     <nav>
                         <span class="bl-next-work">&gt; Next Project</span>
                         <span class="bl-icon bl-icon-close"></span>
