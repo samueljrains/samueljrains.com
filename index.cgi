@@ -306,7 +306,8 @@ print """
                                 <p>The Alternative Media Access Center is an organization based on removing the barriers in education for indivduials with disabilities</p>
                                 <h4>Project Details</h4>
                                 <p>As one of only three developers, I have rewritten the realtime delivery of accessible media and facilitated the store of over 15,000 accessible medias and hundres of thousands of mission critical data.</p>
-                                <p><img src="images/projects/student_center.png" alt="screenshot of student center dashboard">The Student Download center is a portal for students that I designed and developed to integrate existing ordering systems directly with students.</p>
+                                <h4>Further Details</h4>
+                                <p><img src="images/projects/student_center.png" alt="screenshot of student center dashboard">The Student Download center is a portal for students that was designed and developed to integrate the existing ordering systems directly with students.  The process streamlines ordering and conveniently places all information directly in the hands of the students.  Also, the portal allows students to request orders, software, as well as download their media.</p>
                                 <p><a href="http://www.amacusg.gatech.edu" target="_blank" >AMAC Website</a></p>
                             </div><!-- /span8 -->
                         </div><!-- /row-fluid -->	
