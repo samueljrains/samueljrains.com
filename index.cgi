@@ -63,7 +63,7 @@ print """
                         <div class="row-fluid">
                             <div class="span12">
                                 <h2>Hi there!</h2>
-                                <p>I'm a software developer out of Atlanta, Georgia.  I've been working in the field full-time since 2008 and part-time since 2006.  I mainly use open-source technologies but have worked in proprietary stacks as well.  Hope you enjoy my site.</p>
+                                <p>My name is Jack Rains and I'm a software developer out of Atlanta, Georgia.  I've been working in the field full-time since 2008 and part-time since 2006.  I mainly use open-source technologies but have worked in proprietary stacks as well.  Hope you enjoy my site.</p>
                                 <div class="row-fluid">
                                     <div class="span8">
                                         <h2>My Skills</h2>
@@ -253,10 +253,10 @@ print """
                                 <style>
 
                                 </style>
-                                    <a href="http://www.github.com/samueljrains" class="social-network github" ><span>github</span></a>
-                                    <a href="http://www.reddit.com/user/alasjr" class="social-network reddit" ><span>reddit</span></a>
-                                    <a href="http://www.twitter.com/jack__rains" class="social-network twitter" ><span>twitter</span></a>                                    
-                                    <a href="https://stackexchange.com/users/3475503/jack?tab=accounts" class="social-network openid"><span>stack exchange</span></a>								
+                                    <a href="http://www.github.com/samueljrains" class="social-network github" target="_blank" ><span>github</span></a>
+                                    <a href="http://www.reddit.com/user/alasjr" class="social-network reddit" target="_blank" ><span>reddit</span></a>
+                                    <a href="http://www.twitter.com/jack__rains" class="social-network twitter" target="_blank" ><span>twitter</span></a>                                    
+                                    <a href="https://stackexchange.com/users/3475503/jack?tab=accounts" class="social-network openid" target="_blank"><span>stack exchange</span></a>								
                                 </p>
                             </div>
                         </div>
@@ -306,6 +306,7 @@ print """
                                 <p>The Alternative Media Access Center is an organization based on removing the barriers in education for indivduials with disabilities</p>
                                 <h4>Project Details</h4>
                                 <p>As one of only three developers, I have rewritten the realtime delivery of accessible media and facilitated the store of over 15,000 accessible medias and hundres of thousands of mission critical data.</p>
+                                <p><img src="images/projects/student_center.png" alt="screenshot of student center dashboard">The Student Download center is a portal for students that I designed and developed to integrate existing ordering systems directly with students.</p>
                                 <p><a href="http://www.amacusg.gatech.edu" target="_blank" >AMAC Website</a></p>
                             </div><!-- /span8 -->
                         </div><!-- /row-fluid -->	
@@ -334,3 +335,5 @@ print """
     </body>
 </html>
 """
+
+
