@@ -1,8 +1,13 @@
 #! /usr/bin/python
 # -*- coding: utf-8 -*-
 
+
+import sys
 import random
-# import connection string containing db/username/password in string 'con'
+
+sys.dont_write_bytecode = True
+
+# import connection string 'con' with stored credentials
 from connect import con  
 print """
 <!DOCTYPE html>
@@ -26,7 +31,6 @@ print """
         <link href="css/component.css" rel="stylesheet">
         <link href="css/bootstrap-responsive.css" rel="stylesheet">
         <link href="css/alertify.core.css" rel="stylesheet">
-   
    		<!-- mondernizr js file -->
         <script type="text/javascript" src="js/modernizr.custom.js"></script>
 

@@ -1,5 +1,6 @@
 /logs/*
 /connect.py
+/connect.pyc
 .gitconfig
 .htaccess
 .viminfo
