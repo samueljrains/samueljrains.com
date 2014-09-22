@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import random
-# execute connection string contianing db/username/password in string 'con'
-execfile('connect.py')
+# import connection string containing db/username/password in string 'con'
+from connect import con  
 print """
 <!DOCTYPE html>
 <!--
