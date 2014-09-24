@@ -88,7 +88,7 @@ print """
                                         <div class="bar" style="width: 85%;">Web Accessibility 85%</div>
                                         </div>  										
                                         <div class="progress">
-                                        <div class="bar" style="width: 65%;">SaaS 65%</div>
+                                        <div class="bar" style="width: 50%;">Git 50%</div>
                                         </div>                                         
                                         <!-- Progress Bar End --> 
                                     </div><!-- /span6 -->
@@ -188,6 +188,7 @@ print """
                         <div class="row-fluid">
                             <div class="span12">
                                 <h2>Stuff</h2>
+                                    <img src="images/water-pic2.jpg" style="width: 100%;" alt="blue waterfront with dock">                                
                                 <article>
                                     <h3>
                                     """
@@ -200,7 +201,6 @@ with con:
         print "%s" % (row[1])
         print """
                                     </h3>
-                                    <img src="images/water-pic2.jpg" style="width: 100%;" alt="blue waterfront with dock">
                                     <p>
 """
 
