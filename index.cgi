@@ -31,7 +31,6 @@ print """
         <link href="css/component.css" rel="stylesheet">
         <link href="css/bootstrap-responsive.css" rel="stylesheet">
         <link href="css/alertify.core.css" rel="stylesheet">
-   		<!-- mondernizr js file -->
         <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
         <!--[if IE 9]>
@@ -257,9 +256,10 @@ print """
                                 <p>Fill out the form below, or you could drop me an email as well.</p>								
                                 <form id="myForm" method="post" title="Contact Info Request Form"  action="action.cgi">
                                 		<fieldset>
+                                		<legend></legend>
                                     <input type="text"  title="field for entering your name" name="name" id="name" maxlength="50" placeholder="Name" />
                                     <br />
-                                    <input type="text" title="field for entering your email address" name="email" id="email" maxlength="50" placeholder="Email" />
+                                    <input type="email" title="field for entering your email address" name="email" id="email" maxlength="50" placeholder="Email" />
                                     <br />
                                     <textarea title="field for entering your message" name="message" id="message" rows="5" cols="4" maxlength="1000"placeholder="Message"></textarea>
                                     <br />
@@ -275,7 +275,38 @@ print """
                                     <br />
                                     <input type="submit" class="submit" name="submit" value="send message" />
                                     </fieldset>
-                                </form>							
+                                </form>				
+<!--FORM WITH TABLE AND LABELS
+                                <form id="myForm" method="post" title="Contact Info Request Form"  action="action.cgi">
+                                <table summary="Contact Infomration">							
+                                		<fieldset>
+                                		<legend></legend>
+                                		<tr><td colspan="2">
+                                    <label for="name">Name</label></td>
+                                    <td><input type="text"  title="field for entering your name" name="name" id="name" maxlength="50" />
+                                    </td></tr>
+                                    <tr><td colspan="2">
+                                    <label for="email">Email</label></td><td><input type="email" title="field for entering your email address" name="email" id="email" maxlength="50" placeholder="Email" />
+                                    </td></tr>
+                                		<tr><td colspan="2">
+                                    <label for="message">Message</label></td><td><textarea title="field for entering your message" name="message" id="message" rows="5" cols="4" maxlength="1000"placeholder="Message"></textarea>
+                                    </td><t/r>
+                                		<tr><td>                                    
+                                    """
+print "What is %d + %d?</td></tr>" % (number1, number2)
+print """
+                                		<tr><td colspan="2">
+                                    <label for="answer_input">Answer</label></td><td><input style="width: 70px;" type="text" title="field for entering the anti spam answer" placeholder="Answer" size="4" maxlength="2" id="answer_input" name="answer_input" />						                                    
+"""
+print "<input type='hidden' name='answer_value' id='answer_value' value='%d'/>" % (answer_value)
+print """
+                                		<tr><td>
+                                    <input type="submit" class="submit" name="submit" value="send message" />
+                                    </td></tr>
+                                    </fieldset>
+                                    </table>
+                                </form>	
+-->                                                                			
                                 <p>jack@samueljrains.com | Atlanta, Georgia 30307</p>		
                                 <p>
                                 <style>
@@ -299,7 +330,7 @@ print """
                                 <img src="images/projects/atn.png" alt="accesstext dashboard" />
                                 <br>
                                 <br>
-                                <h4>The AccessText Network</h4>
+                                <h3>The AccessText Network</h3>
                                 <p>AccessText is a conduit between the publishing world and colleges and universities across the country, with a shared mission to ensure students with disabilities have equal access to their textbooks in an accessible format and in a timely manner.</p>
                                 <h4>Project Details</h4>                                
                                 <p>Accommodating several textbook publisher's APIs, I developed a tracking and real-time delivery system with extensive user management to provide accessible textbooks and requests to end users.  This includes, download restrictions (14 days only), request data, geographical/IP information, etc. </p>
@@ -314,7 +345,7 @@ print """
                                 <img src="images/projects/amac.png" alt="professional work screenshot"/>
                                 <br>
                                 <br>
-                                <h4>Alternative Media Access Center</h4>
+                                <h3>Alternative Media Access Center</h3>
                                 <p>The Alternative Media Access Center is an organization based on removing the barriers in education for indivduials with disabilities.</p>
                                 <h4>Project Details</h4>
                                 <p>As one of only three developers, I have rewritten the realtime delivery of accessible media and facilitated the storage and access of over 15,000 accessible media files and hundres of thousands of mission critical data files.  Primarily with the use of a LAMP stack (with Ruby scripts for backup) and agile development practices, I have helped create a single system for internal assets, employee information, sensitive student data, ticketing and support logging, in addition to accessible textbooks and media.  The AMAC project encompasses hundreds of membership organizations across the United States and is growing rapidly.  With the growth, scalability of the database architecture and systems has become paramount to my position and continues to do so everyday.</p>
@@ -329,7 +360,7 @@ print """
                                 <img src="images/projects/student_center.png" alt="screenshot of student center dashboard">
                                 <br>
                                 <br>
-                                <h4>Student Download & Resource Center</h4>
+                                <h3>Student Download & Resource Center</h3>
                                 <p>The Student Download & Resource Center is a web application that was designed and developed to integrate the existing ordering systems directly with students.  The process streamlines ordering and conveniently places all information directly in the hands of the students.  Also, the portal allows students to request orders, software, as well as download their media.</p>
                                 <h4>Project Details</h4>
                                 <p>The Student Download & Resource Center is a "ground up" PHP project using MySQL as the database.  The front end uses jQuery and JavaScript functions to create a seamless product that is both easy-to-use and highly functional as well.</p>
