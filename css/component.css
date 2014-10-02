@@ -18,7 +18,12 @@
 	font-style: normal;
 }
 
-body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
+body, html { 
+	font-size: 100%;
+ 	padding: 0; 
+	margin: 0;
+ 	height: 100%;
+}
 
 *,
 *:after,
@@ -68,7 +73,8 @@ a:hover {
 .bl-main > section:first-child {
 	top: 0;
 	left: 0;
-	background: url('../images/back2.jpg') no-repeat; 
+	background: #144057;
+	//background: url('../images/back2.jpg') no-repeat; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -78,7 +84,8 @@ a:hover {
 .bl-main > section:nth-child(2) {
 	top: 0;
 	left: 50%;
-	background: url('../images/back3.jpg') no-repeat; 
+	background: #2F6D51;
+	//background: url('../images/back3.jpg') no-repeat; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -88,7 +95,8 @@ a:hover {
 .bl-main > section:nth-child(3) {
 	top: 50%;
 	left: 0;
-	background: url('../images/back4.jpg') no-repeat; 
+	background: #BE5146;
+	//background: url('../images/back4.jpg') no-repeat; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -98,7 +106,8 @@ a:hover {
 .bl-main > section:nth-child(4) {
 	top: 50%;
 	left: 50%;
-	background: url('../images/back5.jpg') no-repeat; 
+	background: #2c2c2c;		
+	//background: url('../images/back5.jpg') no-repeat; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -437,14 +446,14 @@ div.bl-panel-items > div.bl-hide-current-work {
 	background: #144057;
 }
 .bl-main > section:nth-child(2).bl-expand {
-	background: #414141;
+	background: #2F6D51;
 }
 .bl-main > section:nth-child(3).bl-expand {
-	background: #ee6557;
+	background: #BE5146;
 }
 .bl-main > section:nth-child(4).bl-expand {
 	background: #2c2c2c;
-        //background: #2c2c2c; blackish color
+   //background: #2c2c2c; blackish color
 }
 
 .bl-main.bl-expand-item > section:not(.bl-expand),

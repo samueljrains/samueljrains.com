@@ -31,6 +31,7 @@ print """
         <link href="css/component.css" rel="stylesheet">
         <link href="css/bootstrap-responsive.css" rel="stylesheet">
         <link href="css/alertify.core.css" rel="stylesheet">
+        <link href="css/prism.css" rel="stylesheet" />        
         <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
         <!--[if IE 9]>
@@ -66,7 +67,9 @@ print """
                         <div class="row-fluid">
                             <div class="span12">
                                 <h2>Hi there!</h2>
-                                <p>My name is Jack Rains and I'm a software developer out of Atlanta, Georgia.  I've been working in the field full-time since 2008 and part-time since 2006.  I mainly use open-source technologies but have worked in proprietary stacks as well.  Hope you enjoy my site.</p>
+                                <p>
+                                <!--<img src="images/me.png" style="display: inline; float: left;"/>-->
+                                I'm Jack Rains and I'm a developer out of Atlanta, Georgia.  I've been working in the field full-time since 2008 and part-time since 2006.  I mainly use open-source technologies but have worked in proprietary stacks as well.  Hope you enjoy my site.</p>
                                 <div class="row-fluid">
                                     <div class="span8">
                                         <h2>My Skills</h2>
@@ -189,25 +192,18 @@ print """
                                 <h2>Stuff</h2>
                                     <img src="images/water-pic2.jpg" style="width: 100%;" alt="blue waterfront with dock">                                
                                 <article>
-                                    <h3>
-                                    """
+"""
 #uses 'connect' script and creates a cursor to pull latest article from 'articles' DB table.  outputs previous ones below it as well.
 with con:
     cur = con.cursor()
     cur.execute("SELECT id, title, article, date FROM articles ORDER BY id DESC LIMIT 1")
     for i in range(cur.rowcount):
         row = cur.fetchone()
-        print "%s" % (row[1])
-        print """
-                                    </h3>
-                                    <p>
-"""
-
-        print "%s" % (row[3].strftime("%m.%d.%y"))
-        print "%s" % (row[2])
+        print "<h3>%s</h3>" % (row[1])
+        print "<p>%s</p>" % (row[3].strftime("%m.%d.%y"))
+        print row[2]
         cur.close()                                   
 print """        
-                                    </p>
                                 </article>
                                 <hr>
                                 <h2>Other Entries</h2>
@@ -230,7 +226,6 @@ print """
                     </div><!-- /bl-content -->
                     <span class="bl-icon bl-icon-close"></span>
                 </section>
-
                 <!--=========== CONTACT SECTION ===========-->
                 <section>
                     <div class="bl-box">
@@ -240,6 +235,7 @@ print """
                         <div class="row-fluid">
                             <div class="span12">
                                 <h2>Get in touch</h2>
+                                <img src="images/atl.jpg" style="width: 100%;" alt="atlanta skyline" />		                                
                                 <br>
                                 """
 #used for generating two random numbers (1-10) and ask user to add together to try and trick any spam bots
@@ -251,7 +247,6 @@ print """
                                 var number1 = Math.floor((Math.random() * 10) +1);
                                 var number2 = Math.floor((Math.random() * 10) + 1);
                                 var answer = number1 + number2;
-                                
                                 </script>
                                 <p>Fill out the form below, or you could drop me an email as well.</p>								
                                 <form id="myForm" method="post" title="Contact Info Request Form"  action="action.cgi">
@@ -276,7 +271,7 @@ print """
                                     <input type="submit" class="submit" name="submit" value="send message" />
                                     </fieldset>
                                 </form>				
-<!--FORM WITH TABLE AND LABELS
+<!--FINISH THIS!!!  FORM WITH TABLE AND LABELS 
                                 <form id="myForm" method="post" title="Contact Info Request Form"  action="action.cgi">
                                 <table summary="Contact Infomration">							
                                 		<fieldset>
@@ -307,11 +302,8 @@ print """
                                     </table>
                                 </form>	
 -->                                                                			
-                                <p>jack@samueljrains.com | Atlanta, Georgia 30307</p>		
+                                <p>jack@samueljrains.com | Atlanta, Georgia 30307</p>
                                 <p>
-                                <style>
-
-                                </style>
                                     <a href="http://www.github.com/samueljrains" class="social-network github" target="_blank" ><span>github</span></a>
                                     <a href="http://www.reddit.com/user/alasjr" class="social-network reddit" target="_blank" ><span>reddit</span></a>
                                     <a href="http://www.twitter.com/jack__rains" class="social-network twitter" target="_blank" ><span>twitter</span></a>                                    
@@ -369,7 +361,7 @@ print """
                         </div><!-- /row-fluid -->	
                     </div><!-- /panel3 -->                                           
                     <nav>
-                        <span class="bl-next-work">&gt; Next Project</span>
+                        <span class="bl-next-work">Next Project</span>
                         <span class="bl-icon bl-icon-close"></span>
                     </nav>
                 </div><!-- /panel-items -->
@@ -389,6 +381,7 @@ print """
             Boxlayout.init();
         });
         </script>
+		 <script src="js/prism.js"></script>        
     </body>
 </html>
 """
