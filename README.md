@@ -11,4 +11,4 @@ In the site, I used several JS and CSS package.  Acknowledgments:
 * Alertify <a href="https://github.com/fabien-d/alertify.js">Alertify</a>
 * Prism <a href="https://github.com/LeaVerou/prism">Prism</a>
 
-Let me know if you have any questions or comments regarding the site.  Thanks for looking.
+Let me know if you have any questions or comments.  Thanks for looking.
