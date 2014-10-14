@@ -106,7 +106,7 @@ a:hover {
 .bl-main > section:nth-child(4) {
 	top: 50%;
 	left: 50%;
-	background: #2c2c2c;		
+	background: #A18B6C;		
 	//background: url('../images/back5.jpg') no-repeat; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
@@ -228,6 +228,12 @@ div.bl-panel-items > div > div {
 	padding-top: 5px;
 	font-size: 1.5em;
 }
+
+.bl-content article #article_content {
+	font-family: Courier New, monospace;
+	font-size: 12px;
+}
+
 
 .bl-content article a {
 	color: rgba(0,0,0,0.3);
@@ -351,7 +357,7 @@ div.bl-panel-items {
 }
 
 div.bl-panel-items > div {
-	background: #16a085;
+	background: #2F6D51;
 	z-index: 0;
 	opacity: 0;
 	-webkit-transform: translateY(0);
@@ -449,10 +455,10 @@ div.bl-panel-items > div.bl-hide-current-work {
 	background: #2F6D51;
 }
 .bl-main > section:nth-child(3).bl-expand {
-	background: #BE5146;
+	background: #BE5146; 
 }
 .bl-main > section:nth-child(4).bl-expand {
-	background: #2c2c2c;
+	background: #A18B6C;
    //background: #2c2c2c; blackish color
 }
 

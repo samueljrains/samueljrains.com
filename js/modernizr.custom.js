@@ -307,7 +307,7 @@ window.Modernizr = function(a, b, c) {
                             var a = [].slice.call(arguments);
                             k.apply(this, a), l()
                         }), g(a, j, b, 0, h);
-                        else if (Object(a) === a)
+                        else if (Object(a) === a) 
                             for (n in m = function() {
                                 var b = 0,
                                     c;

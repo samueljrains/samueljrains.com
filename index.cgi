@@ -68,11 +68,11 @@ print """
                             <div class="span12">
                                 <h2>Hi there!</h2>
                                 <p>
-                                <!--<img src="images/me.png" style="display: inline; float: left;"/>-->
-                                I'm Jack Rains and I'm a developer out of Atlanta, Georgia.  I've been working in the field full-time since 2008 and part-time since 2006.  I mainly use open-source technologies but have worked in proprietary stacks as well.  Hope you enjoy my site.</p>
+                                <!-- <img src="images/me.png" style="display: inline; float: left;"/>-->
+                                I'm Jack Rains...a developer out of Atlanta, Georgia.  I've been in the field full-time since 2009 and part-time since 2005.  Mainly using open-source technologies, I enjoy creating web applications, site design, and software systems while broadening my knowledge in new technologies.  Enjoy!</p>
                                 <div class="row-fluid">
                                     <div class="span8">
-                                        <h2>My Skills</h2>
+                                        <h2>Skills</h2>
                                         <!-- Progress Bar --> 
                                         <div class="progress">
                                         <div class="bar" style="width: 75%;">PHP 75%</div>
@@ -84,7 +84,7 @@ print """
                                         <div class="bar" style="width: 65%;">MySQL 65%</div>		                                        
                                         </div>
                                         <div class="progress">
-                                        <div class="bar" style="width: 50%;">Python 50%</div>
+                                        <div class="bar" style="width: 45%;">Python 45%</div>
                                         </div>                                                                                 
                                         <div class="progress">										
                                         <div class="bar" style="width: 85%;">Web Accessibility 85%</div>
@@ -107,11 +107,11 @@ print """
                                                 </div>
                                                 <div class="span3">
                                                 <h3><i class="icon-heart icon-white"></i> What I Love</h3>
-                                                Collaborating with like-minded individuals to create the best possible solutions to any given issue is what drives me.  I love creating software and approaching tasks with an open and positive mind. Accessibility and equal access for all are passions of mine.
+                                                Collaborating with like-minded individuals to create the best possible solutions to any given issue is what drives me.  I love creating software and approaching tasks with an open and positive mind. Accessibility and equal access for all are passions of mine.  I build with accessibility in mind first, NOT as an afterthought.  
                                                 </div>
                                                 <div class="span3">
                                                 <h3><i class="icon-wrench icon-white"></i> Work</h3>
-                                                I'm working with the Georgia Institute of Technology to help bring accessible SaaS to individuals across the U.S.  In addition, I building my online presence and portfolio through various independent and collaborative projects.  I'm wanting to expand my front-end knowledge as well.
+                                                Currently with the Georgia Institute of Technology, I am working to help bring accessible media to individuals across the U.S. via a SaaS model.  Through agile methodologies, I've been able to utilize multiple languages to streamline and create accessible systems across various stacks and architectures.  I'm wanting to expand my front-end knowledge as well as PostgreSQL and Python development.
                                                 </div>   
                                                 <div class="span3">
                                                 <h3><i class="icon-bullhorn icon-white"></i> Get In Touch</h3>
@@ -129,12 +129,12 @@ print """
                 <!--=========== PORTFOLIO SECTION ===========-->
                 <section id="bl-work-section">
                     <div class="bl-box">
-                            <h2>Projects</h2> <!-- class="bl-icon bl-icon-works"-->
+                    		<h2>Projects</h2> <!-- class="bl-icon bl-icon-works"-->
                     </div>
                     <div class="bl-content" >
                         <h2>Recent Projects</h2>
-                        <p>Here are some of the recent projects I have been working on full-time.  They encompass my abilities, not only in web development and software, but design as well.  These web based applications are cross-compatible.  "Speaking to" each other despite different database architecture and languages.</p>
-                        <p>I've taken an interest in PostgreSQL and Python development of late.  iOS and Android (Java!) development are also on the horizon...within the year, I'm aiming to add to my portfolio with mobile apps.  In the meantime, here are some examples of my body of work.</p>
+                        <p>Here are some projects I have been working on recently.  They encompass my abilities, not only in web development and software, but design as well.  These web based applications are cross-compatible.  "Speaking to" each other despite different database architecture and languages.</p>
+                        <p>iOS and Android (Java!) development are also on the horizon...within the year.  In the meantime, here are some examples of my body of work.</p>
                         <div class="row-fluid">
                             <div class="span4">
                                 <ul id="bl-work-items" style="list-style: none;">
@@ -201,7 +201,7 @@ with con:
         row = cur.fetchone()
         print "<h3>%s</h3>" % (row[1])
         print "<p>%s</p>" % (row[3].strftime("%m.%d.%y"))
-        print row[2]
+        print "<div id='article_content'>%s</div>" % (row[2])
         cur.close()                                   
 print """        
                                 </article>
@@ -214,7 +214,7 @@ with con:
     old_articles = con.cursor()
     old_articles.execute("SELECT id, title, article, date FROM articles ORDER BY date DESC LIMIT 10 OFFSET 1")
 for item in old_articles:
-		print "<article><div class='panel panel-default'><div class='panel-heading'><h3 class='panel-title'><a style='color: white;' data-toggle='collapse' data-parent='#accordion' href='#collapse%s'>%s %s</a></h3></div><div id='collapse%s' class='panel-collapse collapse'><div class='panel-body'>%s<hr></div></div></div></article>" % (item[0], item[1] , item[3].strftime("%m.%d.%y"), item[0], item[2])
+		print "<article><div class='panel panel-default'><div class='panel-heading'><h3 class='panel-title'><a style='color: white;' data-toggle='collapse' data-parent='#accordion' href='#collapse%s'>%s %s</a></h3></div><div id='collapse%s' class='panel-collapse collapse'><div class='panel-body'><div id='article_content'>%s</div><hr></div></div></div></article>" % (item[0], item[1] , item[3].strftime("%m.%d.%y"), item[0], item[2])
 #		print "<article><div class='panel panel-default'><div class='panel-heading'><h3 class='panel-title'><a style='color: white;' data-toggle='collapse' data-parent='#accordion' href='#collapse%s'>%s</a></h3></div><div id='collapse%s' class='panel-collapse collapse'><div class='panel-body'>%s<br />%s<hr></div></div></div></article>" % (item[0], item[1] , item[0], item[3].strftime("%m.%d.%y"), item[2])		
 old_articles.close()
 con.close()		
@@ -326,7 +326,7 @@ print """
                                 <p>AccessText is a conduit between the publishing world and colleges and universities across the country, with a shared mission to ensure students with disabilities have equal access to their textbooks in an accessible format and in a timely manner.</p>
                                 <h4>Project Details</h4>                                
                                 <p>Accommodating several textbook publisher's APIs, I developed a tracking and real-time delivery system with extensive user management to provide accessible textbooks and requests to end users.  This includes, download restrictions (14 days only), request data, geographical/IP information, etc. </p>
-                                <p>Using the CakePHP framework, I migrated off the existing (and outsourced) architecture of the network and developed an extensive backend for user management, file delivery, and asset tracking.  I also assisted in the front-end design and implementation of the forward facing website.</p>
+                                <p>Using the CakePHP framework and Amazon S3, I migrated off the existing (third party) architecture of the network and developed an extensive backend for user management, file delivery, and asset tracking.  I also assisted in the front-end design and implementation of the forward facing website.</p>
                                 <p><a href="http://accesstext.org" title="accesstext homepage" target="_blank" >AccessText Website</a></p>
                             </div><!-- /span8 -->
                         </div><!-- /row-fluid -->	
@@ -341,7 +341,7 @@ print """
                                 <p>The Alternative Media Access Center is an organization based on removing the barriers in education for indivduials with disabilities.</p>
                                 <h4>Project Details</h4>
                                 <p>As one of only three developers, I have rewritten the realtime delivery of accessible media and facilitated the storage and access of over 15,000 accessible media files and hundres of thousands of mission critical data files.  Primarily with the use of a LAMP stack (with Ruby scripts for backup) and agile development practices, I have helped create a single system for internal assets, employee information, sensitive student data, ticketing and support logging, in addition to accessible textbooks and media.  The AMAC project encompasses hundreds of membership organizations across the United States and is growing rapidly.  With the growth, scalability of the database architecture and systems has become paramount to my position and continues to do so everyday.</p>
-                                <p>The unit was recently awarded the 2014 Campus Technology Innovator Award Winner in the Student Systems & Services category for the efficiency and ease-of-use by the products and services I have developed and maintained for several years. Also, the award was given due to the excellent analytics software reporting and quickness in response time.  More information can be found here.  <a href="http://us5.campaign-archive1.com/?u=c8be6d0b95d2e799aabd3f20f&id=44e07f76e8" title="link to annoucment for award" target="_blank">Award Announcement</a></p>
+                                <p>The unit was recently awarded the 2014 Campus Technology Innovator Award Winner in the Student Systems & Services category for the efficiency and ease-of-use by the products and services I have developed and maintained for several years. Also, the award was given due to the excellent analytics software reporting and quickness in response time.  More information can be found here.  <a href="http://www.coa.gatech.edu/news/amac-accessibility-solutions-awarded-2014-innovator-award-campus-technology-magazine" title="link to annoucment for award" target="_blank">Award Announcement</a></p>
                                 <p><a href="http://www.amacusg.gatech.edu" target="_blank" >AMAC Website</a></p>
                             </div><!-- /span8 -->
                         </div><!-- /row-fluid -->	
