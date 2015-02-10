@@ -3,7 +3,7 @@ samueljrains.com
 
 Here is my personal website, samueljrains.com
 
-I wrote the page (as a test) in python.  It had originally been developed in PHP, but I went out on a limb to test my (minor) Python abilities.  The code formatting might look kinda funky, but it's all there!  I did this to expand my knowledge of Python in addition to what I already know of PHP.
+I've rewritten my site utilizing several languages and plugins.  It had originally been developed in PHP, but I went out on a limb to test my (minor) Python abilities.  Now, the code base is primarily PHP but has some JavaScript, jQuery, and some AJAX for good measure.
 
 In the site, I used several JS and CSS package.  Acknowledgments:
 * Bootstrap - <a href="https://github.com/twbs/bootstrap">Bootstrap</a>
