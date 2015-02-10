@@ -2,7 +2,7 @@
     $errors         = array();
     $data           = array();
 
-    //validiton for message and anti-spam answers.
+    //validiton for message and anti-spam answer.
     if (empty($_POST['message']))
         $errors['message'] = 'At least say something!';
         
