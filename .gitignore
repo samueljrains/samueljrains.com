@@ -3,8 +3,6 @@
 /mailmonster
 /logs
 /python
-/connect.py
-/connect.pyc
 /connect.php
 .gitconfig
 .htaccess

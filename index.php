@@ -372,7 +372,6 @@
          $(function() {
              Boxlayout.init();
          });
-         
       </script>
       <script src="js/prism.js"></script>        
    </body>
