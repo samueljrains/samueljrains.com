@@ -34,7 +34,7 @@ $(document).ready(function() {
         })
         .fail(function() {
             alertify.error("Something went wrong.  Try again later.");
-            //TODO: call to php function errorLog to log error.
+            //TODO: call to php function errorLog to log error. [end of month]
             //console.log(data);
         });
         // stop the form from submitting the normal way and refreshing the page
