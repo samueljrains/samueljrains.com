@@ -1,7 +1,13 @@
-/logs/*
+/big
+/djan
+/mailmonster
+/logs
+/python
 /connect.py
 /connect.pyc
+/connect.php
 .gitconfig
 .htaccess
 .viminfo
 .bash_history
+.htaccessOLD
