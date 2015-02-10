@@ -3,7 +3,7 @@ samueljrains.com
 
 Here is my personal website, samueljrains.com
 
-I've rewritten my site utilizing several languages and plugins.  It had originally been developed in PHP, but I went out on a limb to test my (minor) Python abilities.  Now, the code base is primarily PHP but has some JavaScript, jQuery, and some AJAX for good measure.
+I've rewritten my site utilizing several languages and plugins.  It had originally been developed in PHP, but I went out on a limb to test my (minor) Python abilities.  Now, the codebase is primarily in PHP, but with  JavaScript, jQuery, and some AJAX for good measure.
 
 In the site, I used several JS and CSS package.  Acknowledgments:
 * Bootstrap - <a href="https://github.com/twbs/bootstrap">Bootstrap</a>
