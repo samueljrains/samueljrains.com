@@ -131,30 +131,7 @@
                         </ul>
                         <p>Student Download & Resource Center</p>
                      </div> <!-- /span4 -->                            
-                  </div>
-                  <!-- /row-fluid -->
-                  <!--AccessGA, App(s), Inverter stuff when completed.   Hurry it up will ya'?!                        
-                     <div class="row-fluid">
-                                         <div class="span4">
-                                             <ul id="bl-work-items" style="list-style: none;">
-                                                 <li data-panel="panel-1"><a href="#"><img src="images/projects/atn.png" alt="accessga homepage" /></a></li>
-                                             </ul>
-                                             <p>AccessGA</p>							
-                                         </div> 
-                                         <div class="span4">
-                                             <ul id="bl-work-items" style="list-style: none;">
-                                                 <li data-panel="panel-1"><a href="#"><img src="images/projects/atn.png" alt="accessga homepage" /></a></li>
-                                             </ul>
-                                             <p>AccessGA</p>							
-                                         </div>   
-                                         <div class="span4">
-                                             <ul id="bl-work-items" style="list-style: none;">
-                                                 <li data-panel="panel-1"><a href="#"><img src="images/projects/atn.png" alt="accessga homepage" /></a></li>
-                                             </ul>
-                                             <p>AccessGA</p>							
-                                         </div>                                                                              
-                                  	</div>
-                     -->
+                  </div> <!--/row-fluid -->
                </div> <!-- /bl-content -->
                <span class="bl-icon bl-icon-close"></span>
             </section>
