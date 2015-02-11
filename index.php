@@ -1,5 +1,5 @@
-<?php include_once('connect.php'); ?>
 <!DOCTYPE html>
+<?php include_once('connect.php'); ?>
 <!--
    * Copyright 2014 
    * Licensed under the Apache License v2.0
@@ -20,17 +20,8 @@
       <link href="css/alertify.core.css" rel="stylesheet">
       <link href="css/prism.css" rel="stylesheet" />
       <script type="text/javascript" src="js/modernizr.custom.js"></script>
-      <!--[if IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-      <![endif]-->
       <!-- favicon and touch icons -->
-      <link rel="icon" href="images/favicon.png">
-      <!-- ICONS FOR TOUCH THEY NEED TO ACTUALYL EXIST
-         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144-precomposed.png">
-         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114-precomposed.png">
-         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72-precomposed.png">
-         <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57-precomposed.png">
-         -->        
+      <link rel="icon" href="images/favicon.png">     
       <script>
          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
